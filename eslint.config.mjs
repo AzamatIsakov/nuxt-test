@@ -1,22 +1,22 @@
-import withNuxt from "./.nuxt/eslint.config.mjs";
-import prettier from "eslint-config-prettier";
+import withNuxt from './.nuxt/eslint.config.mjs';
+import prettier from 'eslint-config-prettier';
 
 export default withNuxt([
   prettier,
   {
     ignores: [
-      "components/ui",
-      "tailwind.config.ts",
-      "node_modules/",
-      "dist/",
-      ".output/",
-      ".nuxt/",
-      "yarn.lock",
-      ".husky/",
+      'components/ui',
+      'tailwind.config.ts',
+      'node_modules/',
+      'dist/',
+      '.output/',
+      '.nuxt/',
+      'yarn.lock',
+      '.husky/',
     ],
-    files: ["**/*.ts", "**/*.vue"],
+    files: ['**/*.ts', '**/*.vue'],
     rules: {
-      "vue/multi-word-component-names": "off",
+      'vue/multi-word-component-names': 'off',
     },
   },
 ]);
