@@ -1,24 +1,7 @@
 <template>
-  <div>
+  <div class="py-5 shadow-md sticky backdrop-blur-sm z-10 bg-white">
     <div class="container">
-      <nav>
-        <ul>
-          <li v-for="navItem in navLinks" :key="navItem.linkPath">
-            <NuxtLink :href="navItem.linkPath">{{ navItem.title }}</NuxtLink>
-          </li>
-        </ul>
-      </nav>
+      <Navbar />
     </div>
   </div>
 </template>
-<script setup>
-const navLinks = computed(() => [
-  { linkPath: "/", title: "Главная" },
-  { linkPath: "/todos", title: "Todos" },
-  { linkPath: "/products", title: "Продукты" },
-  {
-    path: "~/components",
-    pathPrefix: false,
-  },
-]);
-</script>

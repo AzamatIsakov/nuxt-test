@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="container">
-      <h1>TODOS</h1>
+      <h1 class="main-title">Задачи</h1>
     </div>
   </div>
 </template>
