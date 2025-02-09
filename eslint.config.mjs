@@ -17,6 +17,7 @@ export default withNuxt([
     files: ['**/*.ts', '**/*.vue'],
     rules: {
       'vue/multi-word-component-names': 'off',
+      'vue/require-default-prop': 'warn',
     },
   },
 ]);
