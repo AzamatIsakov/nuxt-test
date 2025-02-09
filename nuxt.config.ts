@@ -11,11 +11,14 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@pinia/nuxt',
   ],
+  pinia: {
+    storesDirs: ['./stores/**'],
+  },
 
   components: [
     { path: '~/components/shared', pathPrefix: false },
-    { path: '~/components/shared/*', pathPrefix: false },
-    { path: '~/components/ui/*', pathPrefix: false },
+    { path: '~/components/shared/**', pathPrefix: false },
+    { path: '~/components/ui/**', pathPrefix: false },
   ],
   css: ['~/assets/css/main.css'],
   shadcn: {

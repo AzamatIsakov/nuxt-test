@@ -1,0 +1,39 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "title": "Изучить Nuxtjs",
+      "checked": false
+    },
+    {
+      "id": "2",
+      "title": "Изучить TailwindCSS",
+      "checked": true
+    },
+    {
+      "id": "437f",
+      "title": "Что-то делать",
+      "checked": false
+    },
+    {
+      "id": "dea2",
+      "title": "Изучить SSR",
+      "checked": true
+    },
+    {
+      "id": "6bc0",
+      "title": "Пропылесосить",
+      "checked": false
+    },
+    {
+      "id": "bfd9",
+      "title": "Пройти интерью",
+      "checked": false
+    },
+    {
+      "id": "969d",
+      "title": "Посмотреть телевизор",
+      "checked": false
+    }
+  ]
+}
