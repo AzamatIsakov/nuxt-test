@@ -2,7 +2,7 @@
   <div>
     <div class="container">
       <h1 class="main-title">Задачи</h1>
-      <Todos :todos="todos" />
+      <Todos :todos="todoStore.todos" />
 
       <Sheet>
         <SheetTrigger as-child>
@@ -12,7 +12,7 @@
           <SheetHeader>
             <SheetTitle class="text-center">Добавление задачи</SheetTitle>
           </SheetHeader>
-          <form @submit.prevent="addTodo(todoTitle)">
+          <form @submit.prevent="todoStore.addTodo(todoTitle)">
             <div
               class="flex flex-col items-center gap-4 my-5 w-96 mx-auto border p-5 rounded-lg"
             >
@@ -39,6 +39,8 @@
 <script setup>
 const todoTitle = ref('');
 
-const { addTodo, fetchTodos } = useTodo();
-const { data: todos } = useAsyncData('todos', fetchTodos);
+const todoStore = useTodo();
+
+const { data: todos } = useAsyncData('todos', todoStore.fetchTodos);
+todoStore.$state.todos = todos;
 </script>

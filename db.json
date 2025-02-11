@@ -3,7 +3,7 @@
     {
       "id": "1",
       "title": "Изучить Nuxtjs",
-      "checked": false
+      "checked": true
     },
     {
       "id": "2",
@@ -23,12 +23,12 @@
     {
       "id": "6bc0",
       "title": "Пропылесосить",
-      "checked": false
+      "checked": true
     },
     {
       "id": "bfd9",
       "title": "Пройти интерью",
-      "checked": false
+      "checked": true
     },
     {
       "id": "969d",
